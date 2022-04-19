@@ -1,13 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#mobileMenuButton {
+  display: none !important;
+}
+
+#ListTableCss th,
+#ListTableCss td {
+  font-size: 0.8rem;
+  padding: 13.5px 7px;
+}
+
+#sidebarNavList a {
+  width: 100%;
+}
+
+#closeSidebarX {
+  display: none;
+  position: absolute;
+  padding: 5px 10px;
+  font-size: 25px;
+  right: 15px;
+  top: 15px;
+  border: 2px solid rgb(201, 179, 179);
+}
+
+#mobileSidebar {
+  display: none !important;
+  position: fixed;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100vw;
+  min-height: 100vh;
+  z-index: 100;
+  margin: 0 auto;
+}
+
+#paginationDiv button {
+  color: rgb(190, 172, 172);
+}
+
+@media only screen and (max-width: 1390px) {
+
+  #ListTableCss th,
+  #ListTableCss td {
+    font-size: 0.8rem;
+    padding: 13px 5px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #sidebarNavList li {
+    padding: 10px 0;
+    font-size: 0.875rem;
+  }
+
+  #modeCurencyIcon {
+    margin: 45px 0 90px 0 !important;
+  }
+
+  #sidebarNavListIcon1,
+  #sidebarNavListIcon2,
+  #sidebarNavListIcon3 {
+    min-width: 40px;
+  }
+}
+
+@media only screen and (max-width: 1045px) {
+
+  #ListTableCss th,
+  #ListTableCss td {
+    font-size: 0.7rem;
+    padding: 13px 3px;
+  }
+
+  #detailPageGrid h2 {
+    font-size: 2.6rem;
+  }
+
+  #detailPageGrid span {
+    font-size: 0.9rem;
+  }
+
+  #detailPageGrid2 th {
+    font-size: 0.9rem;
+  }
+
+  #detailPageGrid2 td {
+    font-size: 0.9rem;
+  }
+
+  #modeCurencyIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #modeCurencyIcon {
+    margin: 45px 0 50px 0 !important;
+  }
+}
+
+@media only screen and (max-width: 901px) {
+  #desktopSidebar {
+    display: none;
+  }
+
+  #mobileSidebar {
+    display: block !important;
+    position: fixed;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw;
+    min-height: 100vh;
+    z-index: 100;
+    margin: 0 auto;
+  }
+
+  #mobileMenuButton {
+    display: block !important;
+    margin-left: 10px;
+  }
+
+  #sidebarListButton1,
+  #sidebarListButton2,
+  #sidebarListButton3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #detailPagebox {
+    width: 100vw !important;
+  }
+
+  #closeSidebarX {
+    display: block;
+  }
+
+  #homeContainer {
+    width: 100vw !important;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+
+  #vwapth,
+  #vwaptd {
+    display: none;
+  }
+
+  #detailPageGrid h2 {
+    font-size: 2.3rem;
+  }
+
+  #detailPageGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #gridDiv1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #gridDiv1 {
+    max-width: 100% !important;
+  }
+
+  #gridDiv2 {
+    max-width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  #maxCirculatingth,
+  #maxCirculatingtd {
+    display: none;
+  }
+
+  #detailPageGrid2 th {
+    font-size: 0.9rem;
+  }
+
+  #detailPageGrid2 td {
+    font-size: 0.9rem;
+  }
+
+  #detailPageGrid {
+    padding: 0;
+  }
+
+  #detailPageGrid2 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+
+  #circulatingth,
+  #circulatingtd {
+    display: none;
+  }
+
+  #detailPageGrid h2 {
+    font-size: 1.9rem;
+  }
+
+  #filerTableCss {
+    padding: 2vh 2vw 1vh 2vw;
+  }
+
+  #filerTableCss input {
+    padding: 3px 6px !important;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+
+  #explorerth,
+  #explorertd {
+    display: none;
+  }
+
+  #filerTableFlexBox {
+    justify-content: center;
+  }
+
+  #detailPageGrid h2 {
+    font-size: 1.7rem;
+  }
+
+  #filerTableCss {
+    padding: 2.5vh 2vw 0 2vw;
+  }
+
+  #paginationDiv {
+    padding: 15px 0;
+  }
+
+  #paginationDiv button {
+    font-size: 12px;
+    margin: 0 !important;
+  }
+
+  #detailPageGrid2 td {
+    font-size: 0.8rem;
+  }
+
+  #detailPageGrid2 th {
+    padding: 10px 7px;
+  }
+
+  #detailPageGrid2 td {
+    font-size: 0.6rem;
+    padding: 10px 7px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+
+  #marketcapth,
+  #marketcaptd1,
+  #marketcaptd2 {
+    display: none;
+  }
+
+  #detailPageGrid2 th {
+    font-size: 0.9rem;
+  }
+
+  #ListTableCss th,
+  #ListTableCss td {
+    font-size: 0.7rem;
+    padding: 8px 1px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  #detailPageGrid2 th {
+    padding: 8px 3px;
+  }
+
+  #detailPageGrid2 td {
+    font-size: 0.6rem;
+    padding: 8px 3px;
+  }
+}
+
+@media only screen and (max-width: 285px) {
+  #detailPageGrid h2 {
+    font-size: 1.4rem;
+  }
+
+  #detailPageGrid span {
+    font-size: 0.6rem;
+  }
 }
